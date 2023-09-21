@@ -12,9 +12,11 @@ int main() {
   upper = 300;
   step = 30;
 
+  printf("Farh\tCelsius\n\n");
+
   for(int i=lower; i<=upper; i=i+step) {
     farh = i;
     celsius = farhToCelsius(farh);
-    printf("Fahr: %3.0f Celsius: %6.1f\n", farh, celsius);
+    printf("%3.0f\t%6.1f\n", farh, celsius);
   }
 }
